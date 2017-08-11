@@ -14,6 +14,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chrisbra/histwin.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'jreybert/vimagit'
 
 call vundle#end()							" required
 filetype plugin indent on					" required
