@@ -48,7 +48,6 @@ noremap Щ O
 
 " easier switch from insert mode to normal mode
 inoremap jj <ESC>
-inoremap оо <ESC>
 
 " easier split navigation
 nnoremap <C-j> <C-w><C-j>
