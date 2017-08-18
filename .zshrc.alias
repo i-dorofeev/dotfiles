@@ -1,0 +1,6 @@
+alias hm="cd ~"
+alias zshreload="source ~/.zshrc"
+alias mvnci="mvn clean install -DskipTests"
+alias ggpull="git pull --rebase"
+alias gcfgg="git config --global"
+alias gciam="git commit -a -m"
