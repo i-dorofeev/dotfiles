@@ -1,0 +1,5 @@
+set relativenumber
+
+inoremap <C-;> <ESC>A;<ESC>
+inoremap <C-l> <ESC>/[\)\'\"]<CR>a
+noremap <C-l> /[\)\'\"\>]<CR>
