@@ -23,6 +23,7 @@ set enc=utf-8
 set fileencoding=utf-8
 set backspace=2
 set textwidth=0				" to override that from /etc/vimrc in babun
+set noundofile
 
 inoremap <C-х> <Esc>
 noremap о j
