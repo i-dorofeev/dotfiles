@@ -11,3 +11,6 @@ function gciamp() {
 	gciam "$1"
 	ggpush
 }
+
+alias dbuild="sudo docker build"
+alias dcmps="sudo docker-compose"
