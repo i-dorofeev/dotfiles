@@ -14,3 +14,4 @@ function gciamp() {
 
 alias dbuild="sudo docker build"
 alias dcmps="sudo docker-compose"
+alias drun="sudo docker run"
