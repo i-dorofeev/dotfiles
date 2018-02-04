@@ -15,6 +15,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'chrisbra/histwin.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jreybert/vimagit'
+" Plugin 'lyokha/vim-xkbswitch'
 
 call vundle#end()							" required
 filetype plugin indent on					" required
@@ -46,9 +47,11 @@ noremap ф a
 noremap Ф A
 noremap щ o
 noremap Щ O
+noremap м v
+noremap Ю >
 
 " easier switch from insert mode to normal mode
-inoremap jj <ESC>
+" inoremap jj <ESC>
 
 " easier split navigation
 nnoremap <C-j> <C-w><C-j>

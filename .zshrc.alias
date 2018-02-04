@@ -4,3 +4,10 @@ alias mvnci="mvn clean install -DskipTests"
 alias ggpull="git pull --rebase"
 alias gcfgg="git config --global"
 alias gciam="git commit -a -m"
+alias gadd="git add . && gst"
+alias gdiffc="git diff -w --cached"
+
+function gciamp() {
+	gciam "$1"
+	ggpush
+}
