@@ -5,6 +5,7 @@ alias ggpull="git pull --rebase"
 alias gcfgg="git config --global"
 alias gciam="git commit -a -m"
 alias gadd="git add . && gst"
+alias gdiff="git diff HEAD -w"
 alias gdiffc="git diff -w --cached"
 
 function gciamp() {
@@ -15,3 +16,6 @@ function gciamp() {
 alias dbuild="sudo docker build"
 alias dcmps="sudo docker-compose"
 alias drun="sudo docker run"
+alias dimage="sudo docker image"
+alias dps="sudo docker ps"
+alias dpsa="sudo docker ps -a"
