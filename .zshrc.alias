@@ -4,9 +4,11 @@ alias mvnci="mvn clean install -DskipTests"
 alias ggpull="git pull --rebase"
 alias gcfgg="git config --global"
 alias gciam="git commit -a -m"
+alias gcim="git commit -m"
 alias gadd="git add . && gst"
 alias gdiff="git diff HEAD -w"
 alias gdiffc="git diff -w --cached"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 function gciamp() {
 	gciam "$1"
