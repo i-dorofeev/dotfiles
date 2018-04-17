@@ -1,6 +1,8 @@
-alias hm="cd ~"
 alias zshreload="source ~/.zshrc"
+alias tmuxreload="tmux source-file ~/.tmux.conf"
+
 alias mvnci="mvn clean install -DskipTests"
+
 alias ggpull="git pull --rebase"
 alias gcfgg="git config --global"
 alias gciam="git commit -a -m"
@@ -9,15 +11,21 @@ alias gadd="git add . && gst"
 alias gdiff="git diff HEAD -w"
 alias gdiffc="git diff -w --cached"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gst="git status --untracked-files"
+alias gco="git checkout"
+alias gsync="ggpull && ggpush"
 
 function gciamp() {
 	gciam "$1"
 	ggpush
 }
 
-alias dbuild="sudo docker build"
-alias dcmps="sudo docker-compose"
-alias drun="sudo docker run"
-alias dimage="sudo docker image"
-alias dps="sudo docker ps"
-alias dpsa="sudo docker ps -a"
+alias docker="sudo docker"
+alias dckr="sudo docker"
+alias dbuild="docker build"
+alias dcmps="docker-compose"
+alias drun="docker run"
+alias dimage="docker image"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dvol="docker volume"
