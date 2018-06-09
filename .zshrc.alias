@@ -3,6 +3,7 @@ alias tmuxreload="tmux source-file ~/.tmux.conf"
 
 alias mvnci="mvn clean install -DskipTests"
 
+alias gti="git"
 alias ggpull="git pull --rebase"
 alias gcfgg="git config --global"
 alias gciam="git commit -a -m"
@@ -17,13 +18,13 @@ alias gsync="ggpull && ggpush"
 
 function gciamp() {
 	gciam "$1"
-	ggpush
+	gsync
 }
 
 alias docker="sudo docker"
 alias dckr="sudo docker"
 alias dbuild="docker build"
-alias dcmps="docker-compose"
+alias dcmps="sudo docker-compose"
 alias drun="docker run"
 alias dimage="docker image"
 alias dps="docker ps"
