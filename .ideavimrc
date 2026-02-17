@@ -1,5 +1,92 @@
-set relativenumber
+let mapleader = " "
 
-inoremap <C-;> <ESC>A;<ESC>
-inoremap <C-l> <ESC>/[\)\'\"]<CR>a
-noremap <C-l> /[\)\'\"\>]<CR>
+set ideajoin
+set surround
+set relativenumber
+set number
+set idearefactormode=keep
+set argtextobj
+set highlightedyank
+set NERDTree
+set easymotion
+
+let g:EasyMotion_override_acejump = 0
+
+set quickscope
+
+nnoremap <leader>+ :action ExpandRegion<CR>
+nnoremap <leader>- :action CollapseRegion<CR>
+nnoremap <leader>/ :action ToggleLineBreakpoint<CR>
+nnoremap <leader>; :action CopyReference<CR>
+nnoremap <leader>\ :action OpenEditorInOppositeTabGroup<CR>
+nnoremap <leader>a :action Annotate<CR>
+nnoremap <leader>b :action GotoDeclaration<CR>
+nnoremap <leader>ct :action VimFindActionIdAction<CR>
+nnoremap <leader>nd :action GotoImplementation<CR>
+nnoremap <leader>nu :action GotoSuperMethod<CR>
+nnoremap <leader>j :action GotoNextError<CR> :action ShowIntentionActions<CR>
+nnoremap <leader>k :action GotoPreviousError<CR> :action ShowIntentionActions<CR>
+# nnoremap <leader>n :action BuildMenu<CR>
+# nnoremap <leader>no :action ActivateGradleToolWindow<CR> :action Gradle.ToggleOfflineAction<CR>
+nnoremap <leader>o <Action>(Gradle.ToggleOfflineAction)
+nnoremap <leader>pc :action OpenEditorInOppositeTabGroup<CR>
+nnoremap <leader>pm :action MoveEditorToOppositeTabGroup<CR>
+nnoremap <leader>q :action FileStructurePopup<CR>
+nnoremap <leader>r :action RefactoringMenu<CR>
+nnoremap <leader>td :action DebugClass<CR>
+nnoremap <leader>tr :action RunClass<CR>
+nnoremap <leader>tt :action Rerun<CR>
+nnoremap <leader>u :action TypeHierarchy<CR>
+nnoremap <leader>v :action ShowErrorDescription<CR>
+nnoremap <leader>x :action RenameFile<CR>
+nnoremap <leader>z :action NewScratchFile<CR>
+
+nnoremap <C-r> VpY
+nnoremap <C-x> i <ESC>
+nnoremap <C-p> :action org.intellij.plugins.markdown.ui.actions.editorLayout.CyclicSplitLayoutChangeAction<CR>
+nnoremap <C-S-j> :action MoveStatementDown<CR>
+nnoremap <C-S-k> :action MoveStatementUp<CR>
+nnoremap <C-S-l> :action MoveElementRight<CR>
+nnoremap <C-S-h> :action MoveElementLeft<CR>
+nnoremap <C-j>   <C-y>
+nnoremap <C-k>   <C-e>
+
+vnoremap <silent> p "_dP
+
+noremap Ф A
+noremap ф a
+noremap и b
+noremap в d
+noremap В D
+noremap р h
+noremap ш i
+noremap Ш I
+noremap о j
+noremap л k
+noremap д l
+noremap Д L
+noremap щ o
+noremap Щ O
+noremap з p
+noremap З P
+noremap к r
+noremap г u
+noremap м v
+noremap М V
+noremap ц w
+noremap Ц W
+noremap ч x
+noremap н y
+noremap Н Y
+noremap Ж :
+noremap Ё ~
+nnoremap <S-4> $
+vnoremap <S-4> $
+inoremap <S-4> $
+
+vnoremap <leader>l :action ReformatCode<CR>
+vnoremap <C-s>   y:%s/<C-r>"/
+vnoremap <C-m>   /<C-r>"<CR>
+
+nnoremap <leader>ev :e ~/.ideavimrc<CR>
+ ead>sv :source ~/.ideavimrc<CR>

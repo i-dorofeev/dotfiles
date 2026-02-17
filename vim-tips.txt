@@ -1,4 +1,0 @@
-=== Marks ===
-ma			Set mark a
-'a			Navigate to mark a
-`a			Navigate to mark a
