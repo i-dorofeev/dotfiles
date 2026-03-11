@@ -89,4 +89,4 @@ vnoremap <C-s>   y:%s/<C-r>"/
 vnoremap <C-m>   /<C-r>"<CR>
 
 nnoremap <leader>ev :e ~/.ideavimrc<CR>
- ead>sv :source ~/.ideavimrc<CR>
+nnoremap <leader>sv :source ~/.ideavimrc<CR>
