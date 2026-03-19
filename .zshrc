@@ -107,3 +107,5 @@ antidote load
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.zsh/aliases.zsh
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
