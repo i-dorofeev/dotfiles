@@ -106,6 +106,8 @@ antidote load
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+PATH=$PATH:$HOME/scripts
+
 source $HOME/.zsh/aliases.zsh
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
